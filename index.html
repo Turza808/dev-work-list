@@ -30,9 +30,12 @@
             class="flex items-center gap-2 bg-slate-100 p-2 border-none rounded-3xl"
           >
             <img class="w-6" src="assets/checkbox.png" alt="" />
-            <h1 class="font-bold text-2xl">23</h1>
+            <h1 id="total-completed" class="font-bold text-2xl">23</h1>
           </div>
-          <div class="bg-slate-100 p-2 border-none rounded-full cursor-pointer">
+          <div
+            id="color-change"
+            class="bg-slate-100 p-2 border-none rounded-full cursor-pointer"
+          >
             <img class="w-8" src="assets/theme-btn.png" alt="" />
           </div>
         </div>
@@ -57,12 +60,18 @@
                 </div>
                 <div>
                   <h1 class="text-gray-500 text-base">Task Assigned </h1>
-                  <h1 class="text-black text-3xl font-bold">06</h1>
+                  <h1
+                    id="task-assigned-num"
+                    class="text-black text-3xl font-bold"
+                  >
+                    06
+                  </h1>
                 </div>
               </div>
               <!-- board section -->
               <div
-                class="flex items-center gap-2 p-5 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex-auto border-none rounded-xl"
+                id="discover"
+                class="flex items-center gap-2 p-5 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex-auto border-none rounded-xl cursor-pointer"
               >
                 <img class="w-14 ml-5" src="assets/board.png" alt="" />
                 <h1 class="text-white text-2xl font-bold">
@@ -78,8 +87,10 @@
                   <img class="w-6" src="assets/calender.png" alt="" />
                 </div>
                 <h1 class="text-xl">
-                  Wed, <br />
-                  <span class="font-bold text-xl">jul 28 2025</span>
+                  <span id="card-day">Wed</span>, <br />
+                  <span id="card-date" class="font-bold text-xl"
+                    >jul 28 2025</span
+                  >
                 </h1>
               </div>
             </div>
@@ -95,7 +106,9 @@
               >
                 ShopEase
               </button>
-              <h1 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h1>
+              <h1 id="mobile-title" class="text-2xl font-medium my-4">
+                Fix Mobile Button Issue
+              </h1>
               <div class="bg-white p-4 border-none rounded-lg">
                 <h1 class="truncate text-base opacity-50 font-normal">
                   Debug using Chrome DevTools, <br />
@@ -114,7 +127,8 @@
                   >
                 </h1>
                 <button
-                  class="btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
+                  id="mobile-btn"
+                  class="task-btn btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
                 >
                   Completed
                 </button>
@@ -125,14 +139,16 @@
               <button
                 class="btn bg-white border-none shadow-nonen rounded-lg px-4 py-2 text-base"
               >
-                ShopEase
+                CloudSync
               </button>
-              <h1 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h1>
+              <h1 id="mode-title" class="text-2xl font-medium my-4">
+                Add Dark Mode
+              </h1>
               <div class="bg-white p-4 border-none rounded-lg">
                 <h1 class="truncate text-base opacity-50 font-normal">
-                  Debug using Chrome DevTools, <br />
-                  check for overlapping elements, and ensure onClick works
-                  properly and ensure onClick works properly
+                  Store the user's preference in localStorage, <br />
+                  update CSS variables dynamically, and apply a smooth
+                  transition effect.
                 </h1>
               </div>
               <hr
@@ -146,7 +162,8 @@
                   >
                 </h1>
                 <button
-                  class="btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
+                  id="mode-btn"
+                  class="task-btn btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
                 >
                   Completed
                 </button>
@@ -157,9 +174,11 @@
               <button
                 class="btn bg-white border-none shadow-nonen rounded-lg px-4 py-2 text-base"
               >
-                ShopEase
+                SwiftPay
               </button>
-              <h1 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h1>
+              <h1 id="home-page-title" class="text-2xl font-medium my-4">
+                Optimize Home page 
+              </h1>
               <div class="bg-white p-4 border-none rounded-lg">
                 <h1 class="truncate text-base opacity-50 font-normal">
                   Debug using Chrome DevTools, <br />
@@ -178,7 +197,8 @@
                   >
                 </h1>
                 <button
-                  class="btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
+                  id="home-page-btn"
+                  class="task-btn btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
                 >
                   Completed
                 </button>
@@ -189,9 +209,11 @@
               <button
                 class="btn bg-white border-none shadow-nonen rounded-lg px-4 py-2 text-base"
               >
-                ShopEase
+                Meta
               </button>
-              <h1 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h1>
+              <h1 id="emoji-title" class="text-2xl font-medium my-4">
+                Add new emoji 🤲
+              </h1>
               <div class="bg-white p-4 border-none rounded-lg">
                 <h1 class="truncate text-base opacity-50 font-normal">
                   Debug using Chrome DevTools, <br />
@@ -210,7 +232,8 @@
                   >
                 </h1>
                 <button
-                  class="btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
+                  id="emoji-btn"
+                  class="task-btn btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
                 >
                   Completed
                 </button>
@@ -221,9 +244,11 @@
               <button
                 class="btn bg-white border-none shadow-nonen rounded-lg px-4 py-2 text-base"
               >
-                ShopEase
+                Google LLC
               </button>
-              <h1 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h1>
+              <h1 id="google-title" class="text-2xl font-medium my-4">
+                Integrate OpenAI API
+              </h1>
               <div class="bg-white p-4 border-none rounded-lg">
                 <h1 class="truncate text-base opacity-50 font-normal">
                   Debug using Chrome DevTools, <br />
@@ -242,7 +267,8 @@
                   >
                 </h1>
                 <button
-                  class="btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
+                  id="google-btn"
+                  class="task-btn btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
                 >
                   Completed
                 </button>
@@ -253,9 +279,11 @@
               <button
                 class="btn bg-white border-none shadow-nonen rounded-lg px-4 py-2 text-base"
               >
-                ShopEase
+                Glassdoar
               </button>
-              <h1 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h1>
+              <h1 id="glassdoar-title" class="text-2xl font-medium my-4">
+                Improve Job searching
+              </h1>
               <div class="bg-white p-4 border-none rounded-lg">
                 <h1 class="truncate text-base opacity-50 font-normal">
                   Debug using Chrome DevTools, <br />
@@ -274,7 +302,8 @@
                   >
                 </h1>
                 <button
-                  class="btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
+                  id="glassdoar-btn"
+                  class="task-btn btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
                 >
                   Completed
                 </button>
@@ -290,6 +319,7 @@
           </div>
           <div class="flex justify-center mt-2">
             <button
+              id="clear-history"
               class="btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base"
             >
               Clear History
@@ -298,9 +328,11 @@
           <hr
             class="border-[1px] border-gray-400 border-dashed bg-white my-4"
           />
+          <section id="activity-log"></section>
         </section>
       </section>
     </main>
-    <script src="tailwind.config.js"></script>
+    <script src="utilities/utilities.js"></script>
+    <script src="scripts/completed.js"></script>
   </body>
 </html>

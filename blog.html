@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-200 min-h-screen py-6">
+    <main class="max-w-screen-2xl min-h-screen mx-auto">
+      <nav
+        class="bg-white p-4 flex items-center justify-between border-none rounded-lg"
+      >
+        <div class="flex items-center gap-2">
+          <img class="w-10" src="./assets/logo.png" alt="" />
+          <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <button
+          id="back-btn"
+          class="task-btn btn bg-blue-500 border-none shadow-nonen rounded-lg px-4 py-2 text-base text-white"
+        >
+          Back To Desk
+        </button>
+      </nav>
+      <h1 class="text-4xl text-black font-bold text-center my-5">Blogs</h1>
+      <section>
+        <div class="bg-white border-none rounded-md">
+          <h1 class="p-4 text-xl font-bold">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h1>
+          <hr class="bg-white border border-gray-400 border-dashed" />
+          <p class="p-4 text-lg mb-3">
+            There are 5 different ways to select an element in the Document
+            Object Model. They are getElementByTagName("tagname"),
+            getElementByClassName("className"), getElementById("id"),
+            querySelectorAll("selector"), querySelector("selector").In the last
+            two method, we have to write the selector with proper symbol(#,.)
+          </p>
+        </div>
+
+        <div class="bg-white border-none rounded-md">
+          <h1 class="p-4 text-xl font-bold">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h1>
+          <hr class="bg-white border border-gray-400 border-dashed" />
+          <p class="p-4 text-lg mb-3">
+            innerHTML : It represent the all html code that an element contains.
+            <br />
+            innerText : It only represent the text of an element. <br />
+            textContent : It represent the set of text in an html element and it
+            ignore the html tag and just return the all all text that the
+            element contains.
+          </p>
+        </div>
+        <div class="bg-white border-none rounded-md">
+          <h1 class="p-4 text-xl font-bold">
+            Question-3: What is event delegation in the DOM?
+          </h1>
+          <hr class="bg-white border border-gray-400 border-dashed" />
+          <p class="p-4 text-lg mb-3">
+            It's a way to add an event to an element in an HTML document. In
+            this method, we add the event to the parentNode instead of directly
+            on the childNode of that parentNode.
+          </p>
+        </div>
+        <div class="bg-white border-none rounded-md">
+          <h1 class="p-4 text-xl font-bold">
+            Question-4: What is event bubbling in the DOM?
+          </h1>
+          <hr class="bg-white border border-gray-400 border-dashed" />
+          <p class="p-4 text-lg mb-3">
+            When an event occurs on the target element, it bubbles up to its
+            parent elements. This propagation is called event bubbling. We can
+            control the propagation by stoping it.
+          </p>
+        </div>
+        <div class="bg-white border-none rounded-md">
+          <h1 class="p-4 text-xl font-bold">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h1>
+          <hr class="bg-white border border-gray-400 border-dashed" />
+          <p class="p-4 text-lg mb-3">
+            Create : document.createElement("element");
+            <br />
+            Add : parentElement.appendChild(childElement);
+            <br />
+            Remove: parentElement.removeChild(childElement);
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      document
+        .getElementById("back-btn")
+        .addEventListener("click", function () {
+          window.location.href = "./index.html";
+        });
+    </script>
+  </body>
+</html>
