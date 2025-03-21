@@ -28,7 +28,7 @@ function addActivity(titileId) {
   div.innerHTML = `
     <div class="cardbg p-3 border-none rounded-md">
               <p class="text-base">
-                You have Complete The Task ${title} at ${time}
+                You have Completed The Task ${title} at ${time}
               </p>
             </div>
   `;
